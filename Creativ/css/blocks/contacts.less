@@ -1,0 +1,139 @@
+// main: ../style.less
+.contacts{
+    width: 100%;
+    background-color: #0f0123;
+}
+.contact--color{
+    
+    background: @dark__purple url(https://avatars.mds.yandex.net/get-pdb/931389/8baeb17e-e4a7-488f-aecf-590c3c8c9b73/s1200?webp=false) no-repeat center;
+    background-size: cover;
+    -webkit-background-size:cover ;
+    opacity: .5;
+}
+.contacts__content{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.contacts__input{
+    margin-left: 42px;
+
+    text-align: center;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+
+    border: 0;
+
+    width: 320px;
+    height: 45px;
+
+    background: @dark__purple;
+    opacity: 1;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &::placeholder{
+        font-size: 1em;
+        font-weight: 300;
+
+        color: #6b5c83;
+
+        padding-left: 15px;
+        text-align: left;
+    }
+    &:focus{
+        outline: none;
+    }
+    &:focus{
+        border: 1px solid @pink;
+        text-align: left;
+        padding-left: 15px;
+    }
+
+}
+.contacts__input[type=text]{
+padding: 0;
+margin: 0;
+}
+.contact__form{
+    margin-bottom: 34px;
+}
+//textarea
+.contacts__input__comment{
+    margin-bottom: 32px;
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 1052px;
+    height: 271px;
+
+    font-family: 'Dosis', sans-serif;
+
+    color: #6b5c83;
+
+    border: 0;
+
+    background-color: @dark__purple;
+
+
+    &:focus{
+        outline: none;
+    }
+    &:focus{
+        border: 1px solid @pink;
+        text-align: left;
+        padding-left: 15px;
+    }
+    &::placeholder{
+        font-size: 1em;
+        font-weight: 300;
+
+        color: #6b5c83;
+
+
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 1390px) {
+    .contact__form{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1,5fr);
+        grid-auto-rows: minmax(100px, auto);
+        
+    }
+    .contacts__input{
+        padding: 1em;
+    }
+
+    .contacts__input{
+
+        margin-left: 0;
+    }
+    .contacts__input__comment{
+        width: 0 auto;
+    }
+    .container--container__contacts{
+        padding: 40px 40px;
+    }
+
+    
+    .contacts__input__comment{
+        margin: 0 auto  ;
+        width: 95%;
+    }
+    .btn--btn__form{
+        margin-top: 20px;
+
+    }
+}
+
+
+@media (max-width: 460px) {
+    .container--container__contacts{
+        padding: 10px 10px;
+    }
+}

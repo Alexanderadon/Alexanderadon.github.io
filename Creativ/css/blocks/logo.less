@@ -1,0 +1,52 @@
+// main: ../style.less
+.logo{
+    background-color: @dark__purple;
+
+}
+.logo__content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo__img{
+    cursor: pointer;
+    width: 100%;
+    height: 0 auto;
+}
+
+
+@media (max-width: 1300px) {
+    .logo__img{
+        width: 150%;
+    }
+
+}
+
+@media (max-width: 1300px) {
+    .logo__img{
+        width: 200%;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .logo__img{
+        width: 100%;
+    }
+    .container--container__logo{
+        padding: 30px 0;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+    .logo__img{
+        width: 130%;
+    }
+}
+
+@media (max-width: 400px){
+    .logo__img{
+        width: 150%;
+    }
+}

@@ -1,0 +1,68 @@
+// compress : false
+
+@import "blocks/vars";
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    max-width: 1620px;
+    overflow-x: hidden;
+
+    font-size: 1rem;
+
+    color: #000;
+
+    font-family: 'Dosis', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;  
+}
+.container{
+    padding: 90px 280px ;
+    width: 100%;
+    max-width: 1620px;
+    margin: 0 auto;
+}
+.container--header{
+padding-top: 20px;
+}
+
+// blocks
+@import "blocks/header";
+@import "blocks/inner";
+@import "blocks/nav-menu";
+@import "blocks/intro__inner";
+@import "blocks/About";
+@import "blocks/About__item";
+@import "blocks/title";
+@import "blocks/our";
+@import "blocks/Work";
+@import "blocks/process";
+@import "blocks/process__content";
+@import "blocks/customers";
+@import "blocks/logo";
+@import "blocks/contacts";
+@import "blocks/footer";
+
+
+
+//buttons
+@import "blocks/buttons";
+
+
+
+// helpers blocks
+@import "blocks/helpers";

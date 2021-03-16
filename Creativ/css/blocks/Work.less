@@ -1,0 +1,66 @@
+// main: ../style.less
+.Work{
+    background-color: #2d1948;
+}
+.Work__item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Work__img{
+    display: block;
+}
+.work__shadow{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.work__title{
+    cursor: pointer;
+    padding-top: 155px;
+
+    font-size: 56px;
+
+    text-align: center;
+
+    color: #8e839bc0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    opacity: 0;
+    transform: rotateY(90deg);
+    -webkit-transition:all .4s ;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+.work__shadow:hover .work__title{
+    display: block;
+    opacity: 1;
+    transform: rotateY(0);
+}
+
+
+@media (max-width: 800px) {
+    .Work__item{
+       margin-left: 25%;
+    }
+    .Work__img{
+        width: 100%;
+        height: 0 auto;
+    }
+} 
+
+@media (max-width: 590px) {
+    .Work__item{
+       margin-left: 10%;
+    }
+} 
+
+@media (max-width: 460px) {
+    .Work__item{
+       margin-left: 0;
+    }
+
+} 

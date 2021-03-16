@@ -1,0 +1,54 @@
+// main: ../style.less
+.Our{
+    background-color: @dark__purple;
+
+}
+circle{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.our__circle{
+    display: flex;
+    justify-content: space-around;
+}
+.circle__text{
+    font-style: 1em;
+    flex-wrap: 300;
+
+    color: @menu-color;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+@media (max-width: 800px){
+    .our__circle{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+    }
+
+}
+
+@media (max-width: 420px) {
+    .title{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .our__circle{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+    }
+
+    // container
+    .container--container__Our{
+        padding: 30px 110px;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .container--container__Our{
+        padding: 30px 60px;
+    }
+}

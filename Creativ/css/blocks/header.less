@@ -1,0 +1,141 @@
+// main: ../style.less
+.nav-menu{
+    position: relative;
+    &:after{
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        
+
+        background-color: @pink;
+
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+
+        transition: width .2s linear;
+    }
+    &:hover,
+    &.active {
+
+        &:after {
+            width: 100%;
+        }
+}
+}
+
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 106%;
+    height: 1025px;
+    position: relative;
+    top: 0;
+    right: 0;
+
+    height: 0 auto;
+    background: url(../css/img/people__inner.png) no-repeat  center;
+    background-size: cover;
+    -webkit-bacground-size: cover;
+}
+
+
+.header {
+    width: 100%;
+    text-decoration: none;
+    position: absolute ;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav-toggle{
+
+    width: 30px;
+    position: absolute;
+    display: none;
+
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+    top: 0;
+    right: 30px;
+    padding: 15px 0;
+    z-index: 1;
+}
+.nav-toggle:focus {
+    outline: 0;
+}
+.nav-toggle__element{
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fff;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+    transition: backgroud .2s linear;
+}
+.nav-toggle__element:before,
+.nav-toggle__element:after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    
+    background-color: #fff;
+
+    position: absolute;
+    right: 0;
+    left: 0;    
+    z-index: 1;
+
+    transition: transform .2s linear;   
+}
+.nav-toggle__element:before{
+    top: -8px;
+}
+.nav-toggle__element:after{
+    bottom: -8px;
+}
+.nav-toggle.active .nav-toggle__element{
+    background: none;
+}
+.nav-toggle.active .nav-toggle__element::before{
+    transform-origin:left top ;
+transform: rotate(45deg) translateX(-2.5px);
+}
+.nav-toggle.active .nav-toggle__element::after{
+    transform-origin:left bottom ;
+transform: rotate(-45deg) translateX(-3px);
+}
+
+
+@media (max-width: 800px){
+    .nav{
+        display: none;
+    }
+    .nav-toggle{
+        display: block;
+    }
+
+    // container
+    .container{
+        padding: 50px 100px;
+    }
+}
+
+

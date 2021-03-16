@@ -1,0 +1,93 @@
+// main: ../style.less
+.intro__button{
+    overflow: hidden;
+    position: relative;
+}
+.btn{
+    position: relative; 
+    cursor: pointer;
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+
+    border: 1px solid @pink;
+    background: @pink;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    font-family: 'Dosis', sans-serif;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: @menu-color;
+
+    transition: background .25s linear,
+                color .25s linear;
+
+
+    &:hover{
+        color: @pink;
+        background: @purple;
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.btn__item{
+    padding: 70px 0;
+    padding-bottom: 120px;
+    text-align: center;
+}
+.work__btn{
+    cursor: pointer;
+    width: 230px;
+    height: 60px;
+
+    border: solid 2px @menu-color ;
+    border-radius: 10px;
+
+    background-color: none;
+    background: none;
+
+    font-size: 19px;
+    flex-wrap: 500;
+
+    text-transform: uppercase;
+
+    color: @menu-color;
+
+    transition: background .3s  linear,
+                     color .3s linear,
+                    border .1s linear;
+    &:hover{
+        background: @dark__purple;
+        color: @pink;
+        border: solid 1px @pink;
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+
+//form
+.btn--btn__form{
+    
+    margin-left: 40%;
+}
+
+
+
+
+@media (max-width: 460px) {
+    .btn--btn__form{
+    
+        margin-left: 20%;
+    }
+    
+}

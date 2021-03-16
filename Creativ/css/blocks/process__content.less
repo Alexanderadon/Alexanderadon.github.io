@@ -1,0 +1,85 @@
+// main: ../style.less
+.process__content{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+}
+.process__item{
+    position: relative;
+
+.item__icon{
+    font-size: 3em;
+    font-weight: 500;
+
+    color: #877d97;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    z-index: 1;
+}
+}
+.process__content > div{
+    padding: 2em;
+}
+
+.item__title{
+    margin-bottom: 1em;
+    font-size: 1rem;
+    font-weight: 700;
+
+    color: rgb(170, 160, 160);
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.item__text{
+    font-size: 1rem;
+    font-weight: 300;
+
+    font-style: italic;
+
+    color: #745f98;
+}
+
+@media (max-width: 1300px) {
+    .container--container__process{
+        padding: 90px 100px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .process__content{
+
+        grid-template-columns: repeat(2,2fr);
+    }
+} 
+
+@media (max-width: 830px) {
+    .container--container__process{
+        padding: 30px 0;
+    }
+} 
+
+
+@media (max-width: 650px) {
+    .process__content{
+
+        grid-template-columns: repeat(1,1fr);
+    }
+    .process__item .item__icon{
+        right: 0;
+        left: 100%;
+    }
+    .process__item{
+        margin: 0 auto;
+    }
+} 
+
+
+@media (max-width: 400px) {
+    .process__content > div{
+        padding: 0.6em;
+        padding-left: 0;
+        padding-bottom: 1.4em;
+    }
+} 

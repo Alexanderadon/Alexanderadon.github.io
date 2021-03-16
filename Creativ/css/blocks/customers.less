@@ -1,0 +1,109 @@
+// main: ../style.less
+.customers{
+    background-color: @purple;
+}
+.F-btn{
+    padding-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    padding-left: 5px;
+    width: 230px;
+    height: 30px;
+    min-width: 100px;
+
+    overflow: hidden;
+    cursor: pointer;
+
+
+    font-size: 14px;
+    flex-wrap: 700;
+    
+
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+
+    color: @pink;
+    background-color: inherit;
+
+    transition: .2s;
+
+    &:focus{
+        outline: none;
+    }
+        &:hover{
+            color: @pink;
+            background: #d8c3a1;
+            box-shadow: 0 0 5px @pink, 0 0 70px @pink,
+            0 0 30px @pink;
+            border-radius: 2px;
+            transition-delay: 1s;
+        }
+}
+
+
+.F-btn span{
+    position: absolute;
+    display: block;
+}
+.F-btn span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,@pink);
+}
+.F-btn:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+.F-btn span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,@pink);
+}
+.F-btn:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.F-btn span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,@pink);
+}
+.F-btn:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.F-btn span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,@pink);
+}
+.F-btn:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+//decor
+.F-btn--decor{
+    padding-top: 10px;
+}
+
+
+
+@media (max-width: 710px) {
+    .our__suptext{
+        font-size: 1rem;
+    }
+}

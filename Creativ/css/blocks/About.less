@@ -1,0 +1,46 @@
+// main: ../style.less
+.About{
+
+    background-color: #2d1948;
+
+}
+.container--About{
+ padding-top: 0;  
+ padding-bottom: 40px; 
+
+}
+.about__title{
+    font-size: 38px;
+    font-weight: 700;
+
+    text-align: center;
+
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    color: @menu-color;
+}
+
+@media (max-width: 1350px){
+    .container--About{
+        padding: 90px 100px;
+    }
+}
+
+@media (max-width: 990px) {
+    .container--About{
+        padding: 0 50px;
+        padding-bottom: 20px;
+    }
+
+    .about__item__title{
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container--About{
+        padding: 10px;
+    }
+}
