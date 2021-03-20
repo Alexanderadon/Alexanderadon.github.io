@@ -9,4 +9,4 @@
 
 ## Плюшки 🍪
 
-[Registration](https://alexanderadon.github.io/Creativ/) - Html5/css3, JavaScript.
+[Registration](https://alexanderadon.github.io/registration/) - Html5/css3, JavaScript.
