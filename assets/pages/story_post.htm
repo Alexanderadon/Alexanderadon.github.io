@@ -1,0 +1,41 @@
+title = "PO | Anime Blog_story post"
+url = "/story_post/:slug"
+layout = "default"
+meta_title = "Blog_story"
+meta_description = "description"
+is_hidden = 0
+seo_keywords = "Key"
+robot_index = "index"
+robot_follow = "follow"
+
+[blogPost StoryblogPost]
+slug = "{{ :slug }}"
+categoryPage = "home"
+
+[commentsPost]
+
+[SeoBlogPost]
+post = "post"
+==
+{% component 'SeoBlogPost' data=post %}
+
+<section class="section section--post">
+    <div class="container">
+
+        <div class="section__header">   
+            <h2 class="section__title" > {{ post.title }}</h2>
+            <div class="section__text">
+                <div class="About-post">
+                    <img  src="https://99px.ru/sstorage/86/2018/07/image_860407180004092781531.gif" alt="">
+                </div>
+
+
+                <p>{{post.excerpt}}</p>
+            </div>
+            <div class="post">
+                {{ post.content_html|raw }}
+            </div>
+        </div>
+{% component 'commentsPost' %}
+    </div>
+</section>

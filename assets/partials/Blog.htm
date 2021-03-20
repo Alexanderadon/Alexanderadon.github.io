@@ -1,0 +1,62 @@
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "Blog"
+postsPerPage = 3
+noPostsMessage = "Статей нет"
+sortOrder = "published_at desc"
+categoryPage = "home"
+postPage = "post"
+==
+{% set posts = blogPosts.posts %}
+
+<section class="section"  id="Blog">
+
+    <div class="container">
+        <div class="section__header">
+            <h3 class="section__suptitle">Our stories</h3>
+            <h2 class="section__title" >Latest blog</h2>
+      </div>
+      <div class="blog">
+        {% for post in posts %}
+        <div class="blog__item">
+            <div class="blog__header">    
+                <a href="{{ post.url }}">
+                {% for image in post.featured_images|slice(0, 1) %}       
+                <img class="blog__photo"  src="{{ image.path }}" alt="{{ post.title }}">
+                {% endfor %} 
+            </a> 
+                <div class="blog__date"> 
+                    <div class="blog__number">{{ post.published_at|date('d') }}</div>
+                <div class="blog__Jan">{{ post.published_at|date('M') }}</div>
+            </div>
+            </div>
+            <div class="blog__content">
+                <div class="blog__title">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </div>
+                <div class="blog__text">{{ post.excerpt }}</div>
+            </div>
+            
+            <div class="blog__footer">
+                <div class="blog__stat">
+                    
+                    <span class="blog__stat__item">
+                        <i class="fas fa-eye"></i>
+                        {{ post.views }} </span>
+                    
+                    <span class="blog__stat__item">
+                        <i class="fas fa-comment-dots"></i>
+                        {{post.views}}</span>
+                </div>
+
+            </div>
+
+
+        </div>
+
+       <!-- blog -->
+       {% endfor %}
+    </div>
+
+
+    </section>

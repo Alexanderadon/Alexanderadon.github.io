@@ -1,0 +1,46 @@
+description = "Default layout"
+
+[SeoCmsPage]
+
+
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    {% styles %}
+    <link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }} ">
+    <link href="https://fonts.googleapis.com/css?family=Girassol|Open+Sans|PT+Serif|Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comic+Neue:300|Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comic+Neue:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="icon" type="image/png" href="{{ '../assets/images/october.png'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/css/style__component__plagins.css'|theme }}">
+    {% component 'SeoCmsPage' %}
+</head>
+
+{% partial 'header' %}
+<div class="page">
+        {% page %}  
+
+        {% partial 'structure/footer' %}
+</div>
+<!-- Scripts -->
+        <script src="https://kit.fontawesome.com/5056841828.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{{ 'assets/js/script.js'|theme }}"></script>
+<script src=" {{ 'assets/js/navigation.js'|theme }}"></script>
+<script src=" {{ 'assets/js/slider.js'|theme }}"></script>
+<script src=" {{ 'assets/js/collaps.js'|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+
+            <body>
+      </html>

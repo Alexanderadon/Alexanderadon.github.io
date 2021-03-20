@@ -1,0 +1,8 @@
+<form  class="subscribe"  name="form-subscribe-andradedev" id="form-profile-andradedev" data-request="{{__SELF__}}::onUpdateSubscriber" data-request-update="'{{__SELF__}}::alert': '#result'">
+    <input class="subscribe__input" type="email" name="email" placeholder="Your Email...">
+    <input type="hidden" class="form-control" name="latitude" id="latitude" value="{{subscriber.latitude}}" placeholder="Latitude">
+    <input type="hidden" name="code" id="code" value="{{code}}">
+    <button class="subscribe__but" form="form-profile-andradedev">subscribe</button>
+</form>   
+
+<div id="result"></div>
