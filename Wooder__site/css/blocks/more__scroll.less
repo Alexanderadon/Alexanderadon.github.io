@@ -1,0 +1,74 @@
+// main: ../style.less
+.more__scroll{
+    margin-top: 70px;
+    position: relative;
+    right: 240px;
+
+    transform: translate(0px,-10%);
+    opacity: 0;
+    transition: all 0.8s ease 0.5s;
+
+    @media @tablet {
+        right: 206px;
+
+        @media @Ipad {
+            right: 160px;
+        }
+            @media @Ipadminimin {
+                right: 154px;
+            }
+            @media @mobile__smmin {
+                right: 132px;
+            }
+            @media @mobile__min {
+                right: 105px;
+            }
+    }
+}
+
+.more__scroll._active {
+transform: translate(0px,0px);
+opacity: 1;
+}
+.scroll{
+    margin-bottom: 23px;
+
+    @media @Ipad {
+        display: none;
+    }
+
+}
+.more__arrow-2{
+    margin-bottom: 46px;
+
+    @media @Ipad {
+        margin-left: 3.5px;
+    }
+}
+
+.more__text{
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: @gray;
+
+    opacity: .1;
+
+    transform: rotate(90deg);
+    
+}
+
+.scroll__mobile {
+    display: none;
+    width: 30px;
+    margin-bottom: 23px;
+    }
+
+@media @Ipad {
+    .scroll__mobile {
+        display: inline-block;
+    }
+}

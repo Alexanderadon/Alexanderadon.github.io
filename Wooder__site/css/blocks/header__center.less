@@ -1,0 +1,48 @@
+// main: ../style.less
+.header__logo{
+    font-size: 35px;
+    font-weight: 700;
+
+    letter-spacing: 10px;
+
+    color: @white ;
+    position: relative;
+    top: -12px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    @media @mobile__sm {
+        font-size: 30px;
+    }
+    @media @mobile__smmin_update {
+        margin-left: 50px;
+    }
+    @media @mobile__min {
+        margin-left: 55px;
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+}
+.header__logo:before{
+    content:  "";
+    width: 66px;
+    height: 5px;
+    position: absolute;
+    left: 42.3px;
+    right: 0;
+    top: 20px;
+    z-index: 1;
+    background-color: @orange__opacity;
+
+    @media @mobile__sm {
+        width: 53px;
+        top: 17px;
+    }
+    @media @mobile__min {
+        width: 30px;
+        top: 10px;   
+        left: 24.3px; 
+        height: 3px;
+    }
+}

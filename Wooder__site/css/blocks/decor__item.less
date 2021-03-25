@@ -1,0 +1,132 @@
+// main: ../style.less
+.decor_section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.decor__item{
+    text-align: right;
+}
+@media @notebook {
+    .decor__img {
+    text-align: center;
+    }
+}
+
+
+@media @notebook {
+    .decor__item,
+    .decor__img {
+        width: 100%;
+    }
+}
+
+.item__img--item {
+    transform: translate(-120%,0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.item__img--item._active {
+    transform: translate(0px,0px);
+    opacity: 1;
+    }
+
+.furniture__title--decor{
+    text-align: center;
+    margin-left: 0;
+    transform: translate(-60%,0);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+
+    @media @notebook {
+        margin-top: 20px;
+    }
+}
+.furniture__title--decor:before{
+    right: -45%;
+
+}
+.furniture__text--decor{
+    padding: 27px 0 27px 0;
+    text-align: center;
+
+    transform: translate(-60%,0);
+    opacity: 0;
+    transition: all 0.5s ease 0.1s;
+    
+}
+.furniture__text--decor:before{
+    left: 110%; 
+    text-align: right;
+    top: 40%;
+
+    @media @notebook {
+        left: 0;
+        text-align: center;
+        top: 7%;
+    }
+}
+.furniture__button--decor{
+    text-align: center;
+    margin-left: 30px;
+    transform: translate(-60%,0);
+    opacity: 0;
+    transition: all 0.5s ease 0.2s;
+}
+.furniture__page--decor:after{
+    left: 100%;
+
+}
+.furniture__page--decor{
+    right: -100px;
+    top: 0;
+    text-align: right;
+
+
+    span:after{
+        left: 85%;
+        @media @notebook {
+            left: 96%;
+        }
+        @media @tablet {
+            left: 94%;
+        }
+    }
+    @media @notebook__max {
+        top: 0;
+    }
+    @media @notebook {
+        top: -250%;
+    }
+    @media @tablet {
+        top: -200%;
+    }
+}
+
+
+// img--decor
+.item__img--decor{
+    position: relative;
+}
+.img__text--decor{
+    position: absolute;
+    left: 0;
+    right: 100%;
+    top: 265%;
+    z-index: 1;
+
+    opacity: .3;
+}
+
+@media @notebook__max {
+    .container {
+        padding: 40px 100px;        
+        @media @Ipadmini {
+            padding: 40px 50px;
+        }
+        @media @mobile__smmin {
+            padding: 20px 0px;
+        }
+    }
+
+}

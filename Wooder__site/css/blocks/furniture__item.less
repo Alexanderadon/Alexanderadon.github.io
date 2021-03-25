@@ -1,0 +1,120 @@
+// main: ../style.less
+.furniture__title{
+    position: relative;
+    padding-top: 100px;
+    font-size: 48px;
+    flex-wrap: 900;
+    margin-right: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: @black;
+    transform: translate(-60%,0px);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    
+    @media @notebook {
+        padding-top: 0;
+        margin-right: 0;
+    }
+    @media @mobile__smmin {
+        font-size: 40px;
+    }
+}
+
+.furniture__title._active {
+    transform: translate(0px,0px);
+     opacity: 1;
+}
+
+.furniture__title:before{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 1px;
+    position: absolute;
+    top: 125px;
+    right: 100%;
+    z-index: 1;
+
+    background-color: @black;
+
+    @media @notebook {
+        display: none;
+    }
+    
+}
+
+.furniture__text{
+    width: 97%;
+    padding: 20px 27px 20px 27px;
+
+    font-size: 15px;
+    flex-wrap: 300;
+    
+
+    text-align: left;
+    position: relative;
+
+    transform: translate(-60%,0px);
+    opacity: 0;
+    transition: all 0.5s ease 0.1s;
+
+    @media @notebook__max {
+        padding: 20px 0 20px 27px;
+    }
+    @media @notebook {
+        text-align: center;
+        width: 100%;
+        padding: 30px 0 20px 0;
+    }
+    @media @mobile__smmin {
+        font-size: 13px;
+    }
+}
+
+.furniture__text._active {
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+.furniture__text::before{
+    content: "";
+    display: block;
+    width: 44px;
+    height: 4px;
+    position: absolute;
+    left: -42px;
+    top: 27%;
+    right: 0;
+    z-index: 1;
+
+    background: @orange__opacity;
+
+    @media @notebook {
+        left: 0;
+        top: 7%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: -2px;
+        margin-top: 5px;
+    }
+    @media @mobile__smmin {
+        height: 3px;
+        width: 40px;
+    }
+}
+
+.furniture__intent{
+    color: @orange__opacity;
+}
+
+.furniture__button {
+    transform: translate(-60%,0px);
+    opacity: 0;
+    transition: all 0.5s ease 0.2s;
+}
+
+.furniture__button._active {
+    transform: translate(0px,0px);  
+    opacity: 1;
+}

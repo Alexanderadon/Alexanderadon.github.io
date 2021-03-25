@@ -1,0 +1,28 @@
+// main: ../style.less
+.header__right{
+    font-size: 20px;
+    top: -20px;
+}
+.header__language img{
+    cursor: pointer;
+}
+
+.header__language{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+    &:hover:after {
+        content: attr(data-title);
+        position: absolute;
+        right: 100%; top: 50%;
+        z-index: 1;
+        color: @white;
+        background: #bea67cc5;
+        font-family: Arial, sans-serif; 
+        font-size: 10px; 
+        padding: 5px 5px; 
+        border: 1px solid #333;
+        border-radius: 10px 0px 10px 10px ;
+    }
+}

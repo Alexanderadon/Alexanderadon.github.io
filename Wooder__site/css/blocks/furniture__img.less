@@ -1,0 +1,46 @@
+// main: ../style.less
+.furniture__img {
+    transform: translate(-60px,0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.furniter__img._active {
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+
+.item__img{
+    width: 80%;
+    height: 0 auto;
+
+    box-shadow: 0 0 20px rgba(100, 100, 100, 0.459),
+    0 0 20px rgba(100, 100, 100, 0.459);
+    position: relative;
+
+    @media @articles__col {
+        width: 100%;
+    }
+    @media @Ipadmini {
+        margin-top: 20px;
+    }
+}
+.img__text{
+    overflow: hidden;
+
+    font-size: 170px;
+    flex-wrap: 700;
+
+    color: @gray-l;
+
+    text-transform: uppercase;
+    letter-spacing: 10;
+
+    position: absolute;
+    left: 55%;
+    right: 0;
+    top: 151%;
+    z-index: 1;
+
+    opacity: .1;
+}

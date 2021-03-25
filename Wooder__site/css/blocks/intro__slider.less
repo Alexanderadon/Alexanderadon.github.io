@@ -1,0 +1,142 @@
+// main: ../style.less
+
+.intro__slider{
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+    position: absolute;
+    left: 12%;
+    top: 365px;
+
+    z-index: 1;
+
+    @media @mobile__smmin_update {
+        display: none;
+    }
+}
+
+.slider-data{
+    font-size: 54.2px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    color: @orange__opacity;
+
+    transform: translate(30%,0px);
+    opacity: 0;
+    transition: all 1s ease 0s;
+
+    @media @tablet {
+        font-size: 48.2px;
+    }
+
+    @media @Ipad {
+        font-size: 40px;
+    }
+    @media @mobile__smmin {
+        font-size: 35px;
+    }
+}
+
+.slider-data._active {
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+
+.slider-data:before{
+    width: 100%;
+
+    content: "";
+
+    width: 42px;
+    height: 4px;
+    position: absolute;
+    left: -68px;
+    right: 0;
+    bottom: 0;
+    top: 28px;
+    z-index: 1;
+
+    background: @orange__opacity;
+
+    @media @Ipad {
+        width: 32px;
+        height: 3px;
+        top: 22px;
+    }
+    @media @mobile__smmin {
+        top: 19px;
+        left: -60px;
+    }
+
+}
+.slider__transition{
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+    position: absolute;
+    left: 540%;
+    right: -0;
+    bottom: 0;
+    top: 14px;
+    z-index: 1;
+}
+
+@media @Ipad {
+    .slider__transition {
+        left: 650%;
+        top: 10px;
+
+        @media @mobile__smmin {
+            left: 720%;
+            top: 6px;
+        }
+    }
+
+}
+.slider__circle{
+    display: flex;
+    margin-top: 40px;
+
+}
+
+.slider__circle{
+    display: flex;
+
+    font-size: 11px;
+    font-weight: 300;
+
+    margin-left: 12px;
+
+    color: @gray__slider;
+
+    @media @tablet {
+        font-size: 9px;
+    }
+    @media @mobile__smmin {
+        font-size: 8px;
+    }
+
+
+}
+.active{
+    color: @orange__opacity;
+}
+.decoration{
+    transform: rotate(-90deg);
+    font-size: 395px;
+    font-weight: 700;
+    position: absolute;
+    left: 400px;
+    top: -266px;
+    z-index: 1;
+    opacity: .07 ;
+
+    color: @orange__opacity;
+}
+
+@media @Ipad {
+    .more__arrow {
+        width: 30px;
+        margin-top: 2px;
+    }   
+}

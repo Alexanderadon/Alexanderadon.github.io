@@ -1,0 +1,79 @@
+// main: ../style.less
+
+.furniture{
+    font-size: 15px;
+    font-weight: 500;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #262119;
+    position: relative;
+    text-align: center;
+    top: -50%;
+    left: 80px;
+    z-index: 1;
+
+    transform: rotate(90deg);
+
+   @media @Ipadminimin {
+       display: none;
+   }
+    
+}
+
+.furniture_p {
+    transform: translate(0px,60%);
+    opacity: 0;
+    transition: all 0.8s ease 0.8s;
+}
+
+.furniture_p._active{
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+
+.furniture::after{
+    width: 100%;
+
+    content: "";
+    display: block;
+    width: 52px;
+    height: 4px;
+    position: absolute;
+    left: 112%;
+    right: 0;
+    bottom: 0;
+    top: 0px;
+    z-index: 1;
+
+    background: @orange__opacity;
+    @media @tablet {
+        display: none;
+    }
+}
+
+// D
+.D{
+    padding: 0;
+    margin: 0;
+    padding-right: 40px;
+    font-size: 365px;
+    font-weight: 700;
+
+    text-align: right;
+
+    color: @orange__opacity;
+
+    opacity: .07;
+
+    @media @notebook {
+        display: none;
+    }
+}
+
+@media @notebook__max {
+    .img__text {
+        display: none;
+    }
+}

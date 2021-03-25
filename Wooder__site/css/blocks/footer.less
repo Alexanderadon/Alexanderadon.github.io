@@ -1,0 +1,44 @@
+// main: ../style.less
+.footer{
+    position: relative;
+}
+.footer__img{
+    position: absolute;
+    z-index: 1;
+}
+.footer__item{
+    height: 60px;
+
+    background-color: #080707;
+    background-size: cover;
+    -webkit-bacgruund-size: cover;
+}
+.footer__content{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer__data{
+    color: #3d3e3d;
+
+    font-style: italic;
+}
+.footer__creator{
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #3d3e3d;
+    span{
+        color: #7d7d7d;
+    }
+
+}
+
+.footer__logo {
+    @media (max-width: 497px) {
+        order: 1;
+        margin-left: 0px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,29 @@
+// main: ../style.less
+.header__nav{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    
+    color: @gray;
+
+    transition: color .2s linear;
+
+    @media @Ipad {
+     font-size: 14px;   
+    }
+}
+.header__nav:hover{
+    color: @orange__opacity;
+}
+
+.header__right {
+    margin-top: -18px;
+}
+
+@media @Ipadmini {
+    nav {
+        display: none;
+    }
+}

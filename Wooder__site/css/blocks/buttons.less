@@ -1,0 +1,184 @@
+// main: ../style.less
+.btn{
+    width: 300px;
+    height: 55px;
+
+
+    font-weight: 500;
+    color: @white;
+
+    border: 2px solid @white;
+    text-decoration: none;
+
+    background: none;
+
+    cursor: pointer;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    position: relative;
+    right:100px;
+
+    transition: box-shadow .2s linear,color .2s linear;
+    transform: translate(0px,60%);
+    opacity: 0;
+    transition: all 0.8s ease 0.2s;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:hover{
+    color: @orange__opacity;
+    background: @white;
+    box-shadow: 0 0 7px @white,0 0 14px @white, 0 0 30px @white;
+}
+.btn._active {
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+
+
+@media @tablet {
+    .btn {
+        width: 260px;
+        height: 50px;
+
+        right: 87px;
+    }
+}
+
+@media @Ipad {
+    .btn {
+        width: 230px;
+        height: 40px;
+        right: 56px;
+
+        font-size: 12px;
+
+        @media @Ipadminimin {
+            right: 50px;
+        }
+        @media @mobile__smmin {
+            right: 27px;
+        }
+        @media @mobile__min {
+         right: 6px;
+         margin-top: 10px;  
+        }
+    }
+}
+
+// furniture
+.F-btn{
+    position: relative;
+    display: inline-block;
+    padding-left: 5px;
+    width: 230px;
+    height: 30px;
+    min-width: 100px;
+
+    overflow: hidden;
+    cursor: pointer;
+
+
+    font-size: 14px;
+    flex-wrap: 700;
+    
+
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 3px;
+
+    color: @black;
+    background-color: inherit;
+
+    transition: .2s;
+
+    &:focus{
+        outline: none;
+    }
+        &:hover{
+            color: @orange__opacity;
+            background: #d8c3a1;
+            box-shadow: 0 0 5px @orange__opacity, 0 0 70px @orange__opacity,
+            0 0 30px @orange__opacity;
+            border-radius: 0 10px 10px 0;
+            transition-delay: 1s;
+        }
+
+        @media @notebook {
+            text-align: center;
+        }
+        
+        @media @mobile__smmin {
+            font-size: 12px;
+            width: 200px;
+        }
+}
+// span
+
+.F-btn span{
+    position: absolute;
+    display: block;
+}
+.F-btn span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,@orange__opacity);
+}
+.F-btn:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+.F-btn span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,@orange__opacity);
+}
+.F-btn:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.F-btn span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,@orange__opacity);
+}
+.F-btn:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.F-btn span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,@orange__opacity);
+}
+.F-btn:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+//decor
+.F-btn--decor:hover{
+    border-radius: 20px 0 0 20px;
+}
+.btn-v {
+    right: 0;
+}
+.btn-v i{
+    font-size: 15px;
+}

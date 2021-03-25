@@ -1,0 +1,64 @@
+// main: ../style.less
+.intro__more{
+    position: absolute;
+    left: 0 ;
+    top: 40%;
+    right: 120px;
+    z-index: 1;
+
+    align-items: center;
+    text-align: center;
+}
+.more__title{
+    font-size: 100px;
+    font-weight: 700;
+
+    letter-spacing: 11px;
+    
+    text-transform: uppercase;
+
+    color: @orange__opacity;
+
+    transform: translate(0px,40%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.more__title._active {
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+
+@media @tablet {
+    .more__title {
+        font-size: 85px;
+        
+        @media @Ipad {
+            font-size: 70px;
+            padding-bottom: 5px;
+        }
+        @media @Ipadminimin {
+            font-size: 65px;
+        }
+        @media @mobile__smmin {
+            font-size: 55px;
+        }
+        @media @mobile__min {
+           font-size: 45px;
+        }
+
+    }
+}
+
+@media @Ipadminimin {
+    .intro__more {
+        padding-left: 40px;
+        right: 0;
+
+        @media @mobile__smmin_update {
+        padding-left: 0;
+        }
+
+    }           
+}
+

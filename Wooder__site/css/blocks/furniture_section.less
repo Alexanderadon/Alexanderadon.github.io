@@ -1,0 +1,56 @@
+// main: ../style.less
+.container--furniture{
+padding: 250px 200px 0 200px;
+padding-bottom: 0;
+
+@media @notebook__max {
+    padding: 250px 100px 0 100px;
+}
+@media @notebook {
+    padding: 60px 20px 0 20px;
+}
+@media @mobile__min {
+    padding: 20px 10px 0 20px;
+}
+}
+.furniture_section{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.furniture__item{
+    width: 30%;
+    height: 40%;
+
+}
+.furniture__img{
+    width: 70%;
+
+    transform: translate(-60%,0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    
+}
+
+.furniture__img._active {
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+
+.img__text {
+    transform: translate(-60%,0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s; 
+}
+
+.img__text._active {
+    transform: translate(0px,0px);
+    opacity: 0.1;
+}
+
+@media @notebook {
+    .furniture__img,
+    .furniture__item {
+        width: 100%;
+    }
+}

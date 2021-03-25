@@ -1,0 +1,41 @@
+// main: ../style.less
+.nav__toggle__wrapper {
+    transition: ease 1s;
+}
+.nav_toggle{
+    display: none;
+    position: absolute;
+    width: 100px;
+    
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transition: all ease 0.5s;
+    transform-origin: -50% 0%;
+    transform: translate(-125%, 0);
+}
+@media @notebook {
+    .nav_toggle {
+        display: none;
+    }
+}
+
+    @media @Ipadmini {
+        .header__nav {
+        font-size: 16px;
+        padding: 5px;
+    }
+}
+
+    .mark {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .nav__toggle__wrapper {
+        position: relative;
+        margin-top: -12px;
+        @media @mobile__smmin_update {
+        margin-top: 0;
+    }
+}

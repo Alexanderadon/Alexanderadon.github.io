@@ -1,0 +1,132 @@
+// main: ../style.less
+.props{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.props__item{
+    width: 263px;
+    height: 263px;
+
+    border-radius: 50%;
+    border: 2px solid #e4e4e4;
+    background-color: inherit;
+
+    position: relative;
+
+    transition: all 0.5s ease 0s;
+    transform: scale(0);
+
+    @media @tablet {
+        margin-bottom: 31px;
+        .props__item:last-child {
+            margin-bottom: 0;
+        }
+        @media (max-width: 643px) {
+            margin-bottom: 75px;
+        }
+    }
+}
+
+.props__item:nth-child(2) {
+    transition: all 0.5s ease 0.2s;
+}
+.props__item:nth-child(3) {
+    transition: all 0.5s ease 0.4s;
+}
+
+.props__item._active {
+    transform: scale(1);
+}
+.props__img{
+
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+}
+.props__play{
+    width: 68px;
+    height: 68px;
+
+    border-radius: 50%;
+
+    background-color: rgba(@orange__opacity, .8 );
+
+    position: relative;
+
+    transition: widht 1s linear, height 1s linear;
+
+
+}
+.props__play{
+    cursor: pointer;
+    text-decoration: inherit;
+
+    color: @white;
+
+    position: absolute;
+    top: 37%;
+    left: 37%;
+    z-index: 1;
+
+
+    transition: transform .8s;
+
+    &:hover{
+        transform: scale(3.8);
+        transform-origin: 50%;
+    }
+
+
+}
+.props__link{
+    font-size: 20px;
+
+    color: @white;
+    position: absolute;
+    left: 40%;
+    top: 38%;
+    z-index: 1;
+
+}
+.props__skils:before{
+
+    content: "";
+    display: block;
+    width: 25px;
+    height: 1px;
+
+
+    background-color: @orange__opacity;
+    position: absolute;
+    left: 53px;
+    top: -15px;
+}
+.props__skils{
+    margin-top: 37px;
+    font-size: 16px;
+    font-weight: 500;
+
+    text-align: center;
+
+    letter-spacing: 1px;
+    position: absolute;
+    top: 100%;
+    left: 24%;
+
+    transform: translate(0px,60%);
+    opacity: 0;
+    transition: all 0.8s ease 0.9s;
+}
+.props__skils._active {
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+
+
+@media @Ipadmini {
+    .section--section__Quality {
+        padding-bottom: 20px;
+    }
+}

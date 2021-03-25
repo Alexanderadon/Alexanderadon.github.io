@@ -1,0 +1,60 @@
+// main: ../style.less
+
+.furniture__page{
+    font-size: 36px;
+    font-weight: 700;
+
+    text-align: left;
+
+    letter-spacing: 2;
+
+    color: @black;
+    position: relative;
+    right: 100px;
+    top: 125px;
+    z-index: 1;
+
+    transform: translate(0px,60%);
+    opacity: 0;
+    transition: all 0.8s ease 0.4s;
+
+    &:after{
+        content: "";
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: @orange__opacity;
+        position: absolute;
+        left: 38px;
+        right: 0;
+        top: 29px;
+        z-index: 1;
+    }
+    span:after{
+        content: "";
+        display: block;
+        width: 50px;
+        height: 4px;
+
+        background-color: @orange__opacity;
+        position: absolute;
+        left: -7px;
+        top: 166px;
+        z-index: 1;
+
+        transform: rotate(90deg);
+    }
+
+    @media @notebook__max {
+        left: 0;
+    }
+    @media @Ipadmini {
+        display: none;
+    }
+}
+
+.furniture__page._active {
+    transform: translate(0px,0px);
+    opacity: 1;
+}

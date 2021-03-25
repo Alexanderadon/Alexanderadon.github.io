@@ -1,0 +1,98 @@
+// main: ../style.less
+.complexity {
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.complexity:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background-color: #252424a6;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.video {
+    padding-bottom: 56%;
+    position: relative;
+    z-index: 1;
+
+}
+
+.video__media {
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.complexixy__left {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.complexity__item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    // margin-left: 80px;
+}
+.complexity__title {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 48px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+
+    color: @orange__opacity;
+
+    @media @Ipadmini {
+        font-size: 40px;
+    }
+    @media @mobile__smmin {
+        font-size: 32px;
+    }
+    @media (max-width: 366px) {
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+}
+
+.complexity__text {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 35px;
+
+    font-size: 15px;
+    font-weight: 300;
+
+    line-height: 24px;
+
+    color: @white;
+
+    @media @Ipadmini {
+        flex-direction: 13px;
+    }
+    @media @mobile__sm {
+        display: none;
+    }
+}

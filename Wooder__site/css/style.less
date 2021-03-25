@@ -1,0 +1,95 @@
+// compress : true
+@import "vars";
+
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+
+    margin: 0;
+    max-width: 1920px;
+    color: @black;
+    font-size: 1em;
+
+    font-family: 'Noto Sans TC', sans-serif url();
+
+}
+a{
+    text-decoration: none;
+}
+button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;  
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding: 40px 215px ;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.container--decor{
+    padding-top: 0 ;
+}
+
+.anim-show {
+    transform: translate(0px,60%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.anim-show._active,
+._active .anim-show{
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+
+
+
+// blocks
+@import "../css/blocks/header.less";
+@import "../css/blocks/header__menu.less";
+@import "../css/blocks/header__center.less";
+@import "../css/blocks/header__center-nav.less";
+@import "../css/blocks/header__right.less";
+@import "../css/blocks/intro.less";
+@import "../css/blocks/intro__img.less";
+@import "../css/blocks/intro__slider.less";
+@import "../css/blocks/intro__more.less";
+@import "../css/blocks/more__scroll.less";
+@import "../css/blocks/furniture_section.less";
+@import "../css/blocks/furniture__item.less";
+@import "../css/blocks/furniture__img.less";
+@import "../css/blocks/page.less";
+@import "../css/blocks/decor__item.less";
+@import "../css/blocks/wooder__title.less";
+@import "../css/blocks/props__item.less";
+@import "../css/blocks/complexity.less";
+@import "../css/blocks/complexity__content.less";
+@import "../css/blocks/complexity__item.less";
+@import "../css/blocks/about.less";
+@import "../css/blocks/footer.less";
+
+
+
+
+// buttons sites
+@import "../css/blocks/buttons.less";
+
+
+
+// helpers items
+@import "../css/blocks/helpers.less";
+
+// updates 
+@import "../css/blocks/nav__toggle.less";
