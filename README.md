@@ -1,7 +1,7 @@
 # Александр Курчаков
 
 ## Мой сайт🐱‍🏍
-[alexgit.ru](https://http://alexgit.ru) - сайт портфолио
+[alexgit.ru](http://alexgit.ru/) - сайт портфолио
 ## Мое портфолио 🐱‍👤
 
 [CREATIVE & DIGITAL AGENCY](https://alexanderadon.github.io/Creativ/) - Адаптивная верстка сайта Html5/css3 , Less.
