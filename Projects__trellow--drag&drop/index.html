@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Drag & Drop | Проект 2</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="row">
+          <div class="col-header start">Начать</div>
+          <div class="col-header progress">В процессе</div>
+          <div class="col-header done">Готовы</div>
+          <div class="col-header end">удалить</div>
+      </div>
+
+      <div class="row">
+        <div class="placeholder" data-zone="1">
+          <div class="item" data-item="1" draggable="true">Перетащи меня 1
+          </div>
+          <div class="item" data-item="2"  draggable="true">Перетащи меня 2
+          </div>
+          <div class="item" data-item="3"  draggable="true">Перетащи меня 3
+          </div>
+          <div class="item" data-item="3"  draggable="true">Перетащи меня 5
+          </div>
+          <div class="item" data-item="3"  draggable="true">Перетащи меня 6
+          </div>
+        </div>
+        <div class="placeholder" data-zone="2">
+          <div class="item" data-item="3"  draggable="true">Перетащи меня 7
+          </div>
+          <div class="item" data-item="4"  draggable="true">Перетащи меня 8
+          </div>
+        </div>
+        <div class="placeholder" data-zone="3"></div>
+        <div class="placeholder" data-zone="4"></div>
+      </div>
+
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
