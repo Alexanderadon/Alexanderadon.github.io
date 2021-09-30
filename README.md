@@ -24,5 +24,8 @@
 
 [drag&drop](https://alexanderadon.github.io/Projects__trellow--drag&drop/) - Html5/css3, JavaScript.
 
+[Slider-up&down](https://alexanderadon.github.io/Projects__up&down--slider/) - Html5/css3, JavaScript.
+
+
 
 
