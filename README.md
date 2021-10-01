@@ -26,6 +26,9 @@
 
 [Slider-up&down](https://alexanderadon.github.io/Projects__up&down--slider/) - Html5/css3, JavaScript.
 
+[Hover-board](https://Alexanderadon.github.io/Projects__game--hoverBoard/) - Html5/css3, JavaScript.
+
+
 
 
 
