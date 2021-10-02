@@ -32,7 +32,7 @@
 
 [Snake-game__bestof2021](https://alexanderadon.github.io/Projects__game--snake/) - Html5/css3, JavaScript, Canvas , Photoshop.
 
-[Aim-Training-game](Alexanderadon.github.io/Projects__game--aimtraining/) - Html5/css3, JavaScript.
+[Aim-Training-game](https://alexanderadon.github.io/Projects__game--aimtraining/) - Html5/css3, JavaScript.
 
 
 
