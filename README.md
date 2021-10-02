@@ -28,6 +28,8 @@
 
 [Hover-board](https://Alexanderadon.github.io/Projects__game--hoverBoard/) - Html5/css3, JavaScript.
 
+## Игры 🎮
+
 [Snake-game__bestof2021](https://alexanderadon.github.io/Projects__game--snake/) - Html5/css3, JavaScript, Canvas , Photoshop.
 
 
