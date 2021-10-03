@@ -45,7 +45,7 @@ function startGame() {
 };
 
 function decreaseTime() {
-    if(time === 0 || fail === 40) {
+    if(time === 0 || fail > 40) {
         finishGame();
     }   else {
         let current = --time;
