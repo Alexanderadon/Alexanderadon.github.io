@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8b3cc158.chunk.css",
+    "main.js": "/static/js/main.7bfc556b.chunk.js",
+    "main.js.map": "/static/js/main.7bfc556b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bd2c2a90.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bd2c2a90.js.map",
+    "static/js/2.c1324c9f.chunk.js": "/static/js/2.c1324c9f.chunk.js",
+    "static/js/2.c1324c9f.chunk.js.map": "/static/js/2.c1324c9f.chunk.js.map",
+    "static/js/3.2b16f83c.chunk.js": "/static/js/3.2b16f83c.chunk.js",
+    "static/js/3.2b16f83c.chunk.js.map": "/static/js/3.2b16f83c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8b3cc158.chunk.css.map": "/static/css/main.8b3cc158.chunk.css.map",
+    "static/js/2.c1324c9f.chunk.js.LICENSE.txt": "/static/js/2.c1324c9f.chunk.js.LICENSE.txt",
+    "static/media/Sport.63615bec.less": "/static/media/Sport.63615bec.less",
+    "static/media/auto.63615bec.less": "/static/media/auto.63615bec.less",
+    "static/media/culture.63615bec.less": "/static/media/culture.63615bec.less",
+    "static/media/health.63615bec.less": "/static/media/health.63615bec.less",
+    "static/media/incidents.63615bec.less": "/static/media/incidents.63615bec.less",
+    "static/media/internet.63615bec.less": "/static/media/internet.63615bec.less",
+    "static/media/main.f95450aa.less": "/static/media/main.f95450aa.less",
+    "static/media/main__nav.6285ccdf.less": "/static/media/main__nav.6285ccdf.less",
+    "static/media/politican.3c52e3b4.less": "/static/media/politican.3c52e3b4.less",
+    "static/media/rates.45a157d2.less": "/static/media/rates.45a157d2.less",
+    "static/media/society.63615bec.less": "/static/media/society.63615bec.less",
+    "static/media/world.3c52e3b4.less": "/static/media/world.3c52e3b4.less"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd2c2a90.js",
+    "static/js/2.c1324c9f.chunk.js",
+    "static/css/main.8b3cc158.chunk.css",
+    "static/js/main.7bfc556b.chunk.js"
+  ]
+}

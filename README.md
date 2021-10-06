@@ -1,45 +1,70 @@
-# Александр Курчаков
+# Getting Started with Create React App
 
-## Мой сайт🐱‍🏍
-[alexgit.ru](http://alexgit.ru/) - сайт портфолио.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Мой сайт-блог🧨
-[alexblog.ru](https://alexblog.alexgit.ru/) - мой личный блог сайт.
+## Available Scripts
 
-## Мое портфолио 🐱‍👤
+In the project directory, you can run:
 
-[WOODER](https://alexanderadon.github.io/Wooder__site/) - Кроссбраузерная верстка, Адаптивная верстка, сайта Html5/css3, Less, JavaScript.
+### `npm start`
 
-[CREATIVE & DIGITAL AGENCY](https://alexanderadon.github.io/Creativ/) - Адаптивная верстка сайта Html5/css3 , Less.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-[PO|ANIME](https://alexanderadon.github.io/site-12/assets/) - Кроссбраузерная верстка, Адаптивная верстка сайта Html5/css3, JavaScript, ClickJS, JQuery, OctoberCMS, PHP. (весь сайт невозможно показать в работе на Github но еcть репозиторий со всем исходным кодом [исходный код со всем](https://github.com/Alexanderadon/Po-Anime).
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-[PHOTO-PRINTING](https://alexanderadon.github.io/SITE_YOR_LIFE/) - Адаптивная верстка, сайта Html5/css3, JavaScript, JQuery.
+### `npm test`
 
-## Плюшки 🍪
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-[Registration](https://alexanderadon.github.io/registration/) - Html5/css3, JavaScript.
+### `npm run build`
 
-[Cards](https://alexanderadon.github.io/Projects__car--card/) - Html5/css3, JavaScript.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-[drag&drop](https://alexanderadon.github.io/Projects__trellow--drag&drop/) - Html5/css3, JavaScript.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-[Slider-up&down](https://alexanderadon.github.io/Projects__up&down--slider/) - Html5/css3, JavaScript.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-[Hover-board](https://Alexanderadon.github.io/Projects__game--hoverBoard/) - Html5/css3, JavaScript.
+### `npm run eject`
 
-## Игры 🎮
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-[Snake-game__bestof2021](https://alexanderadon.github.io/Projects__game--snake/) - Html5/css3, JavaScript, Canvas , Photoshop.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-[Aim-Training-game](https://alexanderadon.github.io/Projects__game--aimtraining/) - Html5/css3, JavaScript.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-[RedKiller(ver 0.1)-game](https://alexanderadon.github.io/Projects__game--redKiller/) - Html5/css3, JavaScript, Canvas.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
+### Code Splitting
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
+### Analyzing the Bundle Size
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
