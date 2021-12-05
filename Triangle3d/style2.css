@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #050505;
+}
+
+.cube {
+    margin: 6%;
+
+    display: flex;
+    justify-content: space-around;
+
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 9s linear infinite;
+}
+
+.cube2 {
+    animation: animate2 9s linear infinite;
+}
+
+.cube3 {
+    animation: animate2 9s linear infinite;
+}
+
+
+
+@keyframes animate {
+    0% {
+        transform: ratateX(-30deg) ratateY(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+
+@keyframes animate2 {
+    0% {
+        transform: ratateX(-30deg) ratateY(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(-360deg);
+    }
+}
+
+.cube div {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transform-style: preserve-3d;
+}
+
+.cube div span {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-size: 100px;
+    font-weight: 500;
+
+    text-align: center;
+    color: white;
+
+    width: 260px;
+    height: 280px;
+
+    filter: drop-shadow(0 50px 450px #f6f6f6);
+
+    background: linear-gradient(to right bottom, transparent 50%,#fb8a09, #ff8e03) left / 50% 100% no-repeat, linear-gradient(to left bottom, transparent 50%,#fb8a09, #ff8e03) right / 50% 100% no-repeat;
+
+    transform: rotateY(calc(
+    90deg * var(--i))) translateZ(63px) rotateX(27deg);
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+
+    background: transparent;
+
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+ .top:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 260px;
+    height: 280px;
+
+    background: #ee8309;
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(255, 157, 0, 0.2),
+    0 0 200px rgba(255, 166, 0, 0.4),
+    0 0 300px rgba(255, 136, 0, 0.6),
+    0 0 400px rgba(255, 196, 0, 0.8),
+    0 0 500px rgba(255, 179, 0, 0.1);
+
+    transform: translateZ(-380px);
+}
+
+@media (max-width: 1050px) {
+    .cube2 {
+        display: none;
+    }
+}
+
+@media (max-width: 710px) {
+    .cube3 {
+        display: none;
+    }
+}
