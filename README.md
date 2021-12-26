@@ -28,7 +28,9 @@
 
 [Hover-board](https://Alexanderadon.github.io/Projects__game--hoverBoard/) - Html5/css3, JavaScript.
 
-[ObjectTriangle3d](https://Alexanderadon.github.io/Triangle3d/) - Html5/css3.
+[ObjectTriangle3d](https://Alexanderadon.github.io/Triangle3d/) - 3D Html5/css3.
+
+[CircleJumpingOnSlime3dCss](https://alexanderadon.github.io/3D_Css/) - 3D Html5/css3.
 
 ## Игры 🎮
 
