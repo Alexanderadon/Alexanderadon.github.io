@@ -1118,6 +1118,7 @@ body.touch .activeColor {
     text-align: center;
     text-transform: uppercase;
     position: relative;
+    color: #fff;
 }
 
 .inner__allnews__title:after {
@@ -2366,8 +2367,56 @@ body.touch .activeColor {
     }
 }
 
-.news {
+.container__page {
     padding: 4rem 13.5rem 2rem 13.5rem;
+}
+
+@media (max-width: 768px) {
+    .container__page {
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .container__page {
+        padding-top: 1rem;
+    }
+}
+
+.news__title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: left;
+    color: #1C1C1C;
+}
+
+@media (max-width: 460px) {
+    .news__title {
+        font-size: 2.6rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .news__title {
+        font-size: 2.4rem;
+    }
+}
+
+.news__content {
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    .news__content {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .news__content {
+        margin-top: 1rem;
+    }
 }
 
 .news__content img {
@@ -2383,13 +2432,83 @@ body.touch .activeColor {
     background-size: cover;
 }
 
+.news__content p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: normal;
+    color: #1C1C1C;
+}
+
+@media (max-width: 460px) {
+    .news__content p {
+        font-size: 1.4rem;
+    }
+}
+
+.news__content h1, h2, h3, h4, h5, h6 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+    color: #1C1C1C;
+}
+
+@media (max-width: 460px) {
+    .news__content h1, h2, h3, h4, h5, h6 {
+        font-size: 1.6rem;
+    }
+}
+
+.news__content a {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: normal;
+    color: #0268D2;
+}
+
+.news__content a:hover {
+    color: #57a5f9;
+}
+
+@media (max-width: 460px) {
+    .news__content a {
+        font-size: 1.4rem;
+    }
+}
+
+.news__content b {
+    font-weight: 600;
+}
+
+.news__contact {
+    padding: 0;
+    margin: 0;
+    width: 20rem;
+    display: block;
+    padding: 0;
+    background-color: #fff;
+    position: absolute;
+}
+
+.color__contact {
+    padding: 0;
+    margin: 0.5rem;
+    color: #1C1C1C;
+}
+
+.color__contact a {
+    color: #1C1C1C;
+}
+
 @media (max-width: 1140px) {
     .inner__content,
 .video,
 .gallery,
 .about,
 .footer,
-.news {
+.news,
+.contact {
         padding-left: 9.5rem;
         padding-right: 9.5rem;
     }
@@ -2401,7 +2520,8 @@ body.touch .activeColor {
 .gallery,
 .about,
 .footer,
-.news {
+.news,
+.contact {
         padding-left: 5rem;
         padding-right: 5rem;
     }
@@ -2413,7 +2533,8 @@ body.touch .activeColor {
 .gallery,
 .about,
 .footer,
-.news {
+.news,
+.contact {
         padding-left: 2rem;
         padding-right: 2rem;
     }
