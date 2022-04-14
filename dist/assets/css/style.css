@@ -2533,8 +2533,7 @@ body.touch .activeColor {
 .gallery,
 .about,
 .footer,
-.news,
-.contact {
+.container__page {
         padding-left: 2rem;
         padding-right: 2rem;
     }
