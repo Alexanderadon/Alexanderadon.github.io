@@ -909,13 +909,14 @@ body.touch .activeColor {
 
 @media (max-width: 1370px) {
     .inner__img {
-        height: 100vh;
+        min-height: 85rem;
     }
 }
 
 @media (max-width: 991px) {
     .inner__img {
         height: 100%;
+        min-height: 45rem;
     }
 }
 
