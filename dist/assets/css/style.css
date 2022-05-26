@@ -1,3 +1,6 @@
+/*
+Theme Name: Twenty Twenty
+*/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -399,6 +402,10 @@ a {
     text-decoration: none;
 }
 
+.text__decoration {
+    text-decoration: line-through;
+}
+
 .page {
     padding-top: 11rem;
 }
@@ -581,7 +588,7 @@ a {
     display: block;
     padding: 1.8rem;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 500;
     text-decoration: none;
     color: #fff;
 }
@@ -676,7 +683,6 @@ a {
 
 .dropdown__list li a {
     text-align: left;
-    text-decoration: none;
     font-size: 1.4rem;
     font-weight: normal;
     color: #1C1C1C;
@@ -695,6 +701,29 @@ a {
 .dropdown__list li {
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.dropdown__list__wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.dropdown__list--rugby {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.dropdown__list--rugby li a img {
+    padding: 1rem;
+    width: 100%;
+    max-width: 10rem;
+    min-width: 8rem;
 }
 
 .dropdown__title {
@@ -1057,7 +1086,7 @@ body.touch .activeColor {
     cursor: pointer;
     padding: 1rem 4rem 1rem 4rem;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 300;
     font-family: "Montserrat";
     text-transform: uppercase;
     color: #fff;
@@ -1115,7 +1144,7 @@ body.touch .activeColor {
 .inner__allnews__title {
     margin-bottom: 1.6rem;
     font-size: 2.2rem;
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
     text-transform: uppercase;
     position: relative;
@@ -1126,7 +1155,7 @@ body.touch .activeColor {
     margin-top: 1rem;
     content: " ";
     width: 100%;
-    height: 0.2rem;
+    height: 0.1rem;
     background-color: #fff;
     position: absolute;
     top: 100%;
@@ -1261,7 +1290,7 @@ body.touch .activeColor {
 .inner__news__btn--allnews {
     padding: 1rem 7rem 1rem 7rem;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 300;
     background: none;
     border: 1px solid #0268D2;
 }
@@ -1283,6 +1312,9 @@ body.touch .activeColor {
 
 @media (max-width: 460px) {
     .inner__news__btn--allnews {
+        padding: 1.2rem 0 1rem 0;
+        width: 100%;
+        text-align: center;
         font-size: 1rem;
     }
 }
@@ -2272,7 +2304,7 @@ body.touch .activeColor {
 .contact__subtitle {
     padding-bottom: 0.5rem;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 400;
     color: #fff;
 }
 
@@ -2319,7 +2351,7 @@ body.touch .activeColor {
     width: 20rem;
     height: 4rem;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 300;
     font-family: "Montserrat";
     text-align: center;
     text-transform: uppercase;
@@ -2338,6 +2370,44 @@ body.touch .activeColor {
     .about__btn {
         width: 100%;
     }
+}
+
+.documents__btn {
+    padding: 0.3rem 0 0 0;
+    display: block;
+    width: 100%;
+    max-width: 30rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-family: "Montserrat";
+    letter-spacing: 0.03rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    border-radius: 5rem;
+    background-color: #1C1C1C;
+    transition: background-color 0.2s ease-in-out 0s;
+}
+
+.documents__btn:hover {
+    background-color: #0268D2;
+}
+
+@media (max-width: 800px) {
+    .documents__btn {
+        max-width: 18rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .documents__btn {
+        max-width: 100%;
+    }
+}
+
+.documents__btn--match {
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 1.2rem;
 }
 
 .inner__news__wrapp {
@@ -2814,6 +2884,232 @@ body.touch .activeColor {
         top: 4.6rem;
         left: 10rem;
     }
+}
+
+.post--councilCard {
+    min-height: 40rem;
+}
+
+.post__header__councilCard img {
+    height: 30rem;
+}
+
+.council__link {
+    font-size: 1.8rem;
+}
+
+@media (max-width: 460px) {
+    .council__link {
+        font-size: 1.6rem;
+    }
+}
+
+.post__data li time {
+    line-height: normal !important;
+}
+
+.council p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: normal;
+    color: #1C1C1C;
+}
+
+@media (max-width: 460px) {
+    .council p {
+        font-size: 1.4rem;
+    }
+}
+
+.council a {
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: normal;
+    color: #0268D2;
+}
+
+.council a:hover {
+    color: #57a5f9;
+}
+
+@media (max-width: 460px) {
+    .council a {
+        font-size: 1.4rem;
+    }
+}
+
+.cards__clubs {
+    margin-bottom: 2rem;
+}
+
+.post__club img {
+    transition: -webkit-transform 0.2s ease-in-out 0s;
+    transition: transform 0.2s ease-in-out 0s;
+    transition: transform 0.2s ease-in-out 0s, -webkit-transform 0.2s ease-in-out 0s;
+}
+
+.post__club:hover .club__title {
+    color: #22ABD7;
+}
+
+.post__club:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.post__header {
+    overflow: hidden;
+}
+
+.post__header__club img {
+    height: 32rem;
+    background-color: #f3f2f2;
+}
+
+.club__title {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out 0s;
+}
+
+.club__city {
+    text-transform: uppercase;
+}
+
+.commands__title {
+    margin-bottom: 2rem;
+}
+
+.search {
+    margin-top: 2rem;
+}
+
+.search__int {
+    padding: 2rem;
+    width: 100%;
+    max-width: 50rem;
+    height: 4.4rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-family: "Montserrat";
+    color: #fff;
+    border-radius: 0.6rem;
+    border: 0;
+    background-color: #1C1C1C;
+}
+
+.documents__list__item {
+    margin-top: 2rem;
+    width: 100%;
+    line-height: 3;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .documents__list__item {
+        margin-top: 1rem;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+.documents__list li {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+    color: #1C1C1C;
+}
+
+@media (max-width: 577px) {
+    .documents__list li {
+        font-size: 1.6rem;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.match__tablo {
+    margin-top: 2rem;
+    padding: 1.2rem 0 1.2rem 0;
+    width: 100%;
+    background-color: #1C1C1C;
+}
+
+.match__tablo h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 3%;
+    color: #fff;
+}
+
+.match__table {
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.match__thead {
+    display: block;
+    background-color: #1C1C1C;
+}
+
+.match__thead tr {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.match__thead tr th {
+    padding: 0.8rem 0 0.8rem 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 3%;
+    color: #fff;
+}
+
+.match__tbody {
+    padding: 2rem;
+    width: 100%;
+    display: block;
+    background-color: #fff;
+}
+
+.match__tbody tr {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.match__tbody tr td {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #1C1C1C;
+}
+
+.match__time {
+    color: #828282;
 }
 
 .pagination {
