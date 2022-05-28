@@ -682,9 +682,9 @@ a {
 }
 
 .dropdown__list li a {
-    text-align: left;
     font-size: 1.4rem;
     font-weight: normal;
+    text-transform: capitalize;
     color: #1C1C1C;
 }
 
@@ -2406,6 +2406,7 @@ body.touch .activeColor {
 }
 
 .documents__btn--match {
+    max-width: 100%;
     padding: 1rem 3rem 1rem 3rem;
     font-size: 1.2rem;
 }
@@ -3058,6 +3059,12 @@ body.touch .activeColor {
     color: #fff;
 }
 
+@media (max-width: 360px) {
+    .match__tablo h2 {
+        font-size: 2rem;
+    }
+}
+
 .match__table {
     display: block;
     margin-top: 2rem;
@@ -3086,6 +3093,7 @@ body.touch .activeColor {
 }
 
 .match__tbody {
+    overflow-x: auto;
     padding: 2rem;
     width: 100%;
     display: block;
@@ -3102,14 +3110,93 @@ body.touch .activeColor {
 }
 
 .match__tbody tr td {
+    width: 100%;
     margin-bottom: 1rem;
     font-size: 1.2rem;
     font-weight: 300;
+    text-transform: capitalize;
     color: #1C1C1C;
 }
 
 .match__time {
+    width: 100%;
+    text-align: center;
     color: #828282;
+}
+
+.targets h2, h3, h4, h5, h6 {
+    margin: 1rem 0 0 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@media (max-width: 460px) {
+    .targets h2, h3, h4, h5, h6 {
+        font-size: 1.4rem;
+    }
+}
+
+.targets p {
+    padding: 1rem 0 1rem 0;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 3%;
+    line-height: normal;
+    color: #1C1C1C;
+}
+
+@media (max-width: 460px) {
+    .targets p {
+        font-size: 1.4rem;
+    }
+}
+
+.news__title__targets {
+    margin: 1rem 0 1rem 0;
+}
+
+.targets a {
+    margin: 0 0 1rem 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: normal;
+    color: #0268D2;
+}
+
+.targets a:hover {
+    color: #57a5f9;
+}
+
+@media (max-width: 460px) {
+    .targets a {
+        font-size: 1.4rem;
+    }
+}
+
+.antidoping a {
+    margin: 1rem 0 1rem 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: #0268D2;
+}
+
+.antidoping a:hover {
+    color: #57a5f9;
+}
+
+@media (max-width: 460px) {
+    .antidoping a {
+        font-size: 1.4rem;
+    }
 }
 
 .pagination {
