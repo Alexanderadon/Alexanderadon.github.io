@@ -1,0 +1,91 @@
+.footer {
+  flex-shrink: 0;
+  padding: 0 21rem 0 21rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  background-color: $blackheader;
+
+  @include breakpoint($fullscreen-helpers) {
+    padding: 0 17rem 0 17rem;
+
+  }
+
+  @include breakpoint($tablet-medium-bp) {
+    padding: 0 10rem 0 10rem;
+  }
+
+  @include breakpoint($mobile-large-bp) {
+    padding: 0 5rem 0 5rem;
+  }
+
+  @include breakpoint($mobile-medium-bp) {
+    padding: 0;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+}
+
+.parther,
+.contact {
+  margin-top: 2rem;
+
+  text-align: center;
+}
+
+.parther__img {
+  margin-bottom: 2rem;
+
+  transition: transform .3s ease-in-out 0s;
+
+  &:hover{
+    transform: rotate(10deg);
+  }
+}
+
+.parther__title,
+.contact__title {
+  margin-bottom: 2rem;
+
+  font-size: 2.8rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  color: $white;
+
+  @include breakpoint($tablet-bp) {
+    font-size: 2.4rem;
+  }
+
+  @include breakpoint($tablet-medium-bp) {
+    font-size: 2rem;
+  }
+}
+
+.contact__text {
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  color: $white;
+
+  & a {
+    text-decoration: none;
+
+    color: $white;
+
+  }
+
+  &:hover a {
+      color: rgb(220, 219, 219);
+  }
+
+  @include breakpoint($tablet-bp) {
+    font-size: 1.4rem;
+  }
+  @include breakpoint($tablet-medium-bp) {
+    font-size: 1.2rem;
+  }
+}
+

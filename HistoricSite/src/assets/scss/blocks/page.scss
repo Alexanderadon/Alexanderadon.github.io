@@ -1,0 +1,112 @@
+.page {
+  margin-top: 7.6rem;
+  padding: 0 21rem 0 21rem;
+
+  width: 100%;
+
+  @include breakpoint($fullscreen-helpers) {
+      padding: 0 17rem 0 17rem;
+  }
+
+  @include breakpoint($tablet-medium-bp) {
+    padding: 0 10rem 0 10rem;
+  }
+
+  @include breakpoint($mobile-large-bp) {
+    padding: 0 5rem 0 5rem;
+  }
+
+  @include breakpoint($mobile-medium-bp) {
+    padding: 0;
+  }
+
+}
+
+.container {
+  margin-top: -4rem;
+  padding: 4rem;
+
+  width: 100%;
+  height: 100%;
+  background-color: $gray;
+
+  @include breakpoint($tablet-medium-bp) {
+    padding: 3rem;
+  }
+
+  @include breakpoint($mobile-medium-bp) {
+    padding: 2rem;
+  }
+}
+
+.page__title {
+  font-size: 3.2rem;
+  font-weight: 600;
+
+  color: $white;
+
+  @include breakpoint($tablet-bp) {
+    font-size: 2.8rem;
+  }
+  @include breakpoint($tablet-medium-bp) {
+    font-size: 2.4rem;
+  }
+}
+
+
+// page content
+.page__content {
+  margin-top: 2rem;
+
+  & img {
+    width: 100%;
+    height: 60rem;
+
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1rem;
+    
+    font-size: 2rem;
+    font-weight: 500;
+
+    color: $white;
+
+    @include breakpoint($tablet-bp) {
+      font-size: 1.6rem;
+    }
+  }
+
+  a {
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    color: $blue;
+
+    text-decoration: none;
+
+    @include breakpoint($tablet-bp) {
+      font-size: 1.2rem;
+    }
+  }
+
+  p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    line-height: normal;
+
+    color: $white;
+
+    @include breakpoint($tablet-bp) {
+      font-size: 1.2rem;
+    }
+  }
+}

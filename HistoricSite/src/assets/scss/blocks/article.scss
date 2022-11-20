@@ -1,0 +1,48 @@
+.history__article {
+  margin-top: 0;
+}
+
+.about {
+  margin-top: 3rem;
+
+  h1, h2, h3, h4, h5, h6 {
+
+    font-size: 2rem;
+    font-weight: 500;
+
+    color: $white;
+
+    @include breakpoint($tablet-bp) {
+      font-size: 1.6rem;
+    }
+  }
+
+  a {
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    color: $blue;
+
+    text-decoration: none;
+
+    @include breakpoint($tablet-bp) {
+      font-size: 1.2rem;
+    }
+  }
+
+  p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    line-height: normal;
+
+    color: $white;
+
+    @include breakpoint($tablet-bp) {
+      font-size: 1.2rem;
+    }
+  }
+}

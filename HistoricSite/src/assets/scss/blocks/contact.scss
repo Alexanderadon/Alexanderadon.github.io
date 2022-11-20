@@ -1,0 +1,36 @@
+.contacts {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  a {
+    font-size: 1.6rem;
+    font-weight: 300;
+
+
+    text-decoration: none;
+
+    color: $white;
+
+    @include breakpoint($tablet-bp) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.contact__email,
+.contact__admin {
+  padding: 1rem 0 1rem 0;
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    color: $white;
+
+    @include breakpoint($tablet-bp) {
+      font-size: 1.2rem;
+    }
+  }
+}
