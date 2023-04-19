@@ -8,10 +8,7 @@
 
 ## Мое портфолио 🐱‍👤
 
-Alexanderadon.github.io/dist/
-
 [Rugby KZ](Alexanderadon.github.io/dist/) - Сайт для Казахстан Регби
-
 
 [WOODER](https://alexanderadon.github.io/Wooder__site/) - Кроссбраузерная верстка, Адаптивная верстка, сайта Html5/css3, Less, JavaScript.
 
