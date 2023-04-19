@@ -16,7 +16,7 @@
 
 [PHOTO-PRINTING](https://alexanderadon.github.io/SITE_YOR_LIFE/) - Адаптивная верстка, сайта Html5/css3, JavaScript, JQuery.
 
-[PHOTO-PRINTING](https://alexanderadon.github.io/siteKz/dist/) - Исторический сайт Казахстана
+[HistorySite](https://alexanderadon.github.io/siteKz/dist/) - Исторический сайт Казахстана
 
 ## Плюшки 🍪
 
