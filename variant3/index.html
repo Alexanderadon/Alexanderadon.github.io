@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <ul class="header__ul">
+        <li class="header__item">
+          <a class="header__item--link" href="/">Your Logo</a>
+        </li>
+      </ul>
+    </header>
+    <section class="Registration">
+      <div class="navbar">
+        <div class="navbar__header">
+          <h1 class="navbar__title">Sign in</h1>
+          <p class="navbar__suptitle">If you don’t have an account register</p>
+          <p class="navbar_supundertitle">
+            You can <span> <a href="/"> Register here!</a></span>
+          </p>
+        </div>
+        <form class="Registration__form" action="/">
+          <label for="input">
+            Email
+            <div class="input__flex">
+            <img class="input__img" src="./image/icon//Vector.png" alt="">
+            <input class="input" type="email" placeholder="Enter your email address" />
+          </div>
+          </label>
+          <label for="input">
+            Password
+            <div class="input__flex">
+            <img class="input__img" src="./image/icon/Vector-1.png" alt="">
+            <input class="input" type="password" placeholder="Enter your Password" />
+            <img class="input__img__glass" src="./image/icon/invisible 1.png" alt="">
+          </div>
+          </label>
+          <div class="form__password">
+          <div class="input__checkbox">
+            <input type="checkbox">
+            <p class="p__checkbox">Rememebr me</p>
+          </div>
+          <a class="forgot" href="/">Forgot Password ?</a>
+        </div>
+
+        <button class="form__btn">Login</button>
+        </form>
+        <div class="center__gray">
+        <a class="input__link--gray" href="/">or continue with</a>
+      </div>
+
+      <div class="links">
+        <img class="links__img" src="./image/icon/Facebook.png" alt="image">
+        <img class="links__img" src="./image/icon/apple.png" alt="image">
+        <img class="links__img" src="./image/icon/google.png" alt="image">
+      </div>
+      </div>
+    </section>
+  </body>
+</html>
